@@ -1,1 +1,39 @@
+public class Main { 
+public static void main(String[] args) { 
 
+    double P1 = 8;
+    double E1 = 7;
+    double E2 = 9;
+    double X = 1;
+    double SUB = 0;
+    double API = 8;
+    double EXF = 6;
+
+    double base, parte1, parte2, media;
+    
+
+    base = (P1 * 0.5) + (E1 * 0.2) + (E2 * 0.3) + X + (SUB * 0.15);
+
+    parte1 = base * 0.5;
+
+    if (base > 5.9) { 
+    parte2 = API * 0.5;
+    } else { 
+    parte2 = 0;
+    }
+
+    media = parte1+parte2;
+
+    if (EXF > media){ 
+    media = EXF;
+    }
+
+
+    if (media > 10) { 
+    media = 10; 
+    }
+    System.out.println("A sua média é: "+ media);
+    
+   
+}
+}
