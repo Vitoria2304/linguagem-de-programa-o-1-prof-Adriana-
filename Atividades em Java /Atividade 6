@@ -1,1 +1,22 @@
+CALCULADORA DE VIAGEM 
+void main (){
 
+
+    Scanner teclado = new  Scanner(System.in);
+    System.out.println("digite qual foi a distacia percorrida?: ");
+    double distancia = teclado.nextDouble();
+    System.out.println("digite qual foi o preço do combustivel gasto?: ");
+    double preco = teclado.nextDouble();
+    System.out.println("Vamos comecar os calculos");
+
+    double litros =  distancia / 12;
+
+    System.out.println("Litros: "+ litros);
+    double custo = litros * preco;
+
+    if (distancia > 500) {
+        custo = custo * 0.95;
+    }
+
+        System.out.println ("O custo da viagem será:  " + custo);
+}
