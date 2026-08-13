@@ -10,5 +10,46 @@ void main (){
     num2=s.nextInt();
     if (num1 % num2 == 0);
     else ("o número não é multiplo")
+}
+}
 
 ATIVIDADE 2 
+void main (){
+
+
+    Scanner teclado = new  Scanner(System.in);
+    IO.println("digite quatro números");
+    String senha = teclado.nextLine();
+
+    if (senha.equals("1234")){
+        IO.println("A senha está correta");
+    }
+    else {
+        IO.println ("A senha esta incorreta ");
+}
+}
+
+ATIVIDADE 3: 
+
+void main (){
+
+
+    Scanner teclado = new  Scanner(System.in);
+    System.out.println("digite qual foi a distacia percorrida?: ");
+    double distancia = teclado.nextDouble();
+    System.out.println("digite qual foi o preço do combustivel gasto?: ");
+    double preco = teclado.nextDouble();
+    System.out.println("Vamos comecar os calculos");
+
+    double litros =  distancia / 12;
+
+    System.out.println("Litros: "+ litros);
+    double custo = litros * preco;
+
+    if (distancia > 500) {
+        custo = custo * 0.95;
+    }
+
+        System.out.println ("O custo da viagem será:  " + custo);
+}
+
