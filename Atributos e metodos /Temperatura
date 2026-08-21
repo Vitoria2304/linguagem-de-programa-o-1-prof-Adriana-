@@ -1,0 +1,81 @@
+import java.util.Scanner;
+public class Temperatura {
+
+    public static void Tempo() {
+
+        double janeiro = 24;
+        double fevereiro = 24;
+        double marco = 24;
+        double abril = 22;
+        double maio = 19;
+        double junho = 18;
+        double julho = 18;
+        double agosto = 19;
+        double setembro = 20;
+        double outubro = 22;
+        double novembro = 23;
+        double dezembro = 24;
+
+        if (janeiro < 18)
+            System.out.println("Janeiro: Frio");
+        else
+            System.out.println("Janeiro: Temperatura agradável");
+
+        if (fevereiro < 18)
+            System.out.println("Fevereiro: Frio");
+        else
+            System.out.println("Fevereiro: Temperatura agradável");
+
+        if (marco < 18)
+            System.out.println("Março: Frio");
+        else
+            System.out.println("Março: Temperatura agradável");
+
+        if (abril < 18)
+            System.out.println("Abril: Frio");
+        else
+            System.out.println("Abril: Temperatura agradável");
+
+        if (maio < 18)
+            System.out.println("Maio: Frio");
+        else
+            System.out.println("Maio: Temperatura agradável");
+
+        if (junho < 18)
+            System.out.println("Junho: Frio");
+        else
+            System.out.println("Junho: Temperatura agradável");
+
+        if (julho < 18)
+            System.out.println("Julho: Frio");
+        else
+            System.out.println("Julho: Temperatura agradável");
+
+        if (agosto < 18)
+            System.out.println("Agosto: Frio");
+        else
+            System.out.println("Agosto: Temperatura agradável");
+
+        if (setembro < 18)
+            System.out.println("Setembro: Frio");
+        else
+            System.out.println("Setembro: Temperatura agradável");
+
+        if (outubro < 18)
+            System.out.println("Outubro: Frio");
+        else
+            System.out.println("Outubro: Temperatura agradável");
+
+        if (novembro < 18)
+            System.out.println("Novembro: Frio");
+        else
+            System.out.println("Novembro: Temperatura agradável");
+
+        if (dezembro < 18)
+            System.out.println("Dezembro: Frio");
+        else
+            System.out.println("Dezembro: Temperatura agradável");
+
+        System.out.println("A temperatura de São José dos Campos é agradável");
+    }
+}
