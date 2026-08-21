@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Sistema {
+
+    public void login() {
+
+
+        Scanner teclado = new Scanner(System.in);
+        IO.println("digite quatro números");
+        String senha = teclado.nextLine();
+
+        if (senha.equals("1234")) {
+            IO.println("A senha está correta");
+        } else {
+            IO.println("A senha esta incorreta ");
+        }
+    }
+}
