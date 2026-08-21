@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Aluguel {
+        public static void Carro () {
+
+            Scanner entrada = new Scanner(System.in);
+
+            int dias;
+            double km;
+            double total;
+
+            System.out.print("Digite a quantidade de dias: ");
+            dias = entrada.nextInt();
+
+            System.out.print("Digite a quilometragem: ");
+            km = entrada.nextDouble();
+
+            total = dias * 100;
+
+            if (km > dias * 100) {
+                total = total + (km - dias * 100) * 2;
+            }
+
+            System.out.printf("Valor total: R$ " + total);
+
+            entrada.close();
+        }
+    }
