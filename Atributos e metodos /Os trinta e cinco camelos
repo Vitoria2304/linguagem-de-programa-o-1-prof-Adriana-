@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Camelo {
+
+    public void distribuir() {
+
+        int camelos = 35;
+
+        int parte1 = 2;
+        int parte2 = 3;
+        int parte3 = 9;
+
+        int cameloExtra = 1;
+
+        int total = camelos + cameloExtra;
+
+        int primeiro = total / parte1;
+        int segundo = total / parte2;
+        int terceiro = total / parte3;
+
+        int sobra = total - primeiro - segundo - terceiro;
+
+
+        System.out.println("Quantidade original: " + camelos);
+        System.out.println("Camelo acrescentado: " + cameloExtra);
+        System.out.println("Quantidade para a divisão: " + total);
+
+        System.out.println();
+        System.out.println("Primeiro irmão: " + primeiro + " camelos");
+        System.out.println("Segundo irmão: " + segundo + " camelos");
+        System.out.println("Terceiro irmão: " + terceiro + " camelos");
+
+        System.out.println();
+        System.out.println("Camelo que sobrou: " + sobra);
+    }
+}
