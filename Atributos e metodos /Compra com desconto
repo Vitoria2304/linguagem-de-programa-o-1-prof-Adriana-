@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class Descont {
+    public void dinheiro() {
+
+        Scanner entrada = new Scanner(System.in);
+
+        double arroz, feijao, oleo, acucar, cafe;
+        double macarrao, farinha, fuba, molho, sal;
+        double total, desconto, valorFinal;
+
+        System.out.print("Digite o preço do arroz (1,5 kg): R$ ");
+        arroz = entrada.nextDouble();
+
+        System.out.print("Digite o preço do feijão (1 kg): R$ ");
+        feijao = entrada.nextDouble();
+
+        System.out.print("Digite o preço do óleo (900 ml): R$ ");
+        oleo = entrada.nextDouble();
+
+        System.out.print("Digite o preço do açúcar (1 kg): R$ ");
+        acucar = entrada.nextDouble();
+
+        System.out.print("Digite o preço do café (250 g ou 500g): R$ ");
+        cafe = entrada.nextDouble();
+
+        System.out.print("Digite o preço do macarrão (500 g): R$ ");
+        macarrao = entrada.nextDouble();
+
+        System.out.print("Digite o preço da farinha (1 kg): R$ ");
+        farinha = entrada.nextDouble();
+
+        System.out.print("Digite o preço do fubá (500 g): R$ ");
+        fuba = entrada.nextDouble();
+
+        System.out.print("Digite o preço do molho de tomate (300 g): R$ ");
+        molho = entrada.nextDouble();
+
+        System.out.print("Digite o preço do sal (1 kg): R$ ");
+        sal = entrada.nextDouble();
+
+        total = arroz + feijao + oleo + acucar + cafe
+                + macarrao + farinha + fuba + molho + sal;
+
+        desconto = 0;
+
+        if (total > 100) {
+            desconto = total * 0.10;
+        }
+
+        valorFinal = total - desconto;
+
+
+        System.out.println("Total: R$ " + total);
+        System.out.println("Desconto: R$ " + desconto);
+        System.out.println("Valor final: R$ " + valorFinal);
+
+    }
+}
